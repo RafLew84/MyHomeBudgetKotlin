@@ -8,6 +8,43 @@
     android:background="@color/dark_blue_900"
     tools:context=".fragments.AccountsFragment">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/total"
+        android:textColor="@color/white"
+        android:textSize="26sp"
+        app:layout_constraintBottom_toTopOf="@+id/totalAmountTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/totalAmountTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="100000 zł"
+        android:textColor="@color/white"
+        android:textSize="38sp"
+        android:fontFamily="serif"
+        app:layout_constraintBottom_toBottomOf="@+id/donut_viewAccount"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <app.futured.donut.DonutProgressView
+        android:id="@+id/donut_viewAccount"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        app:donut_bgLineColor="@color/white"
+        app:donut_gapAngle="20"
+        app:donut_gapWidth="4"
+        app:donut_animationDuration="1500"
+        app:donut_strokeWidth="6dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
         android:layout_width="match_parent"
@@ -15,6 +52,7 @@
         android:layout_marginTop="12dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/donut_viewAccount" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
