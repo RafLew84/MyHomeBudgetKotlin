@@ -1,4 +1,4 @@
-package com.example.myhomebudgetkotlin.ui
+package com.example.myhomebudgetkotlin.ui.fragments
 
 import android.os.Binder
 import android.os.Bundle
