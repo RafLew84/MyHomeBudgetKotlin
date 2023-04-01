@@ -11,7 +11,7 @@ class AccountsViewHolder (private val binding: RecyclerItemViewBinding) : Recycl
         binding.apply {
             RVNameTextView.text = item.name
             RVNumberTextView.text = item.number.replaceRange(0 until 6, "******")
-            ("${formatter.format(item.amount)} zł").also { RVValueTextView.text = it }
+            RVValueTextView.text = "${formatter.format(item.amount)} zł"
             RVcolorBarView.setBackgroundColor(item.color)
         }
     }
