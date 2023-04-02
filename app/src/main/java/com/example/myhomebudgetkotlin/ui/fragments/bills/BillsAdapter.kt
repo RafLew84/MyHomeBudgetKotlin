@@ -5,9 +5,8 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.myhomebudgetkotlin.data.DataProvider
 import com.example.myhomebudgetkotlin.databinding.RecyclerItemViewBinding
-import com.example.myhomebudgetkotlin.ui.fragments.accounts.AccountsViewHolder
 
-class BillAdapter : RecyclerView.Adapter<BillsViewHolder>(){
+class BillsAdapter : RecyclerView.Adapter<BillsViewHolder>(){
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): BillsViewHolder {
         return BillsViewHolder(RecyclerItemViewBinding.inflate(

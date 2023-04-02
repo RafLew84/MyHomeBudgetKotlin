@@ -9,7 +9,6 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import app.futured.donut.DonutSection
 import com.example.myhomebudgetkotlin.data.DataProvider
 import com.example.myhomebudgetkotlin.databinding.FragmentDetailInfoBinding
-import com.example.myhomebudgetkotlin.ui.fragments.accounts.AccountsAdapter
 import com.example.myhomebudgetkotlin.util.formatter
 
 class BillsFragment : Fragment() {
@@ -50,7 +49,7 @@ class BillsFragment : Fragment() {
 
     private fun setupRecyclerView() {
         binding.recyclerView.apply {
-            adapter = BillAdapter()
+            adapter = BillsAdapter()
             layoutManager = LinearLayoutManager(this@BillsFragment.requireContext())
         }
     }

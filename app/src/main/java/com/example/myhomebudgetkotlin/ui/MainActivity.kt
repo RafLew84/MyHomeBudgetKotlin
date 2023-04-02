@@ -22,7 +22,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
 
-
         binding.viewPager.adapter = FinanceAdapter(this)
 
         tabLayoutSetup(this, binding.tabLayout, binding.viewPager)
